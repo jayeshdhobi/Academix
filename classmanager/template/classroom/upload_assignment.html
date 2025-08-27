@@ -13,6 +13,98 @@
     <input type="submit" class="btn btn-danger" name="" value="Upload">
   </form>
   {% endif %}
+
+  <!-- Excel Upload for Teachers -->
+  {% if user.is_authenticated and user.is_teacher %}
+    <h2>Upload Excel Sheet</h2>
+    {% if messages %}
+      {% for message in messages %}
+        <div class="message {% if message.tags %}{{ message.tags }}{% endif %}">{{ message }}</div>
+      {% endfor %}
+    {% endif %}
+    <form enctype="multipart/form-data" method="post" action="{% url 'excel_upload' %}">
+      {% csrf_token %}
+      {% bootstrap_form excel_form %}
+      <input type="submit" class="btn btn-danger" value="Upload Excel">
+    </form>
+  {% endif %}
+
+  <!-- Excel Data for Students -->
+  {% if not user.is_teacher %}
+    <h2>View Excel Data</h2>
+    {% if excel_data %}
+      <table id="excel_data">
+        <tr>
+          {% for header in excel_data.0 %}
+            <th>{{ header }}</th>
+          {% endfor %}
+        </tr>
+        {% for row in excel_data %}
+          <tr>
+            {% for cell in row %}
+              <td>{{ cell }}</td>
+            {% endfor %}
+          </tr>
+        {% endfor %}
+      </table>
+    {% else %}
+      <p>No Excel data available.</p>
+    {% endif %}
+  {% endif %}
 </div>
 </div>
+
+<style>
+  input {
+    outline: none;
+  }
+
+  input[type=file] {
+    background: #ededed;
+    border: solid 1px #ccc;
+    padding: 9px 15px;
+    font-family: inherit;
+    font-size: 100%;
+    color: #333;
+    cursor: pointer;
+    border-radius: 10em;
+    transition: all .5s;
+  }
+
+  input[type=file]:hover,
+  input[type=file]:focus {
+    background-color: #fff;
+    border-color: #66CC75;
+    box-shadow: 0 0 5px rgba(109,207,246,.5);
+    outline: 2px solid #66CC75;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: inherit;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #ededed;
+    color: #333;
+  }
+
+  td {
+    background-color: #fff;
+  }
+
+  .message {
+    margin-top: 10px;
+    color: #333;
+    font-family: inherit;
+  }
+</style>
 {% endblock %}
