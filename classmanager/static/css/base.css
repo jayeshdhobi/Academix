@@ -250,8 +250,7 @@ ul li a {
   transition: 0.5s;
   color: #7C3AED; /* Vibrant purple */
 }
-
-/* LOGIN PAGE ############################################# */
+/* LOGIN PAGE */
 .login-page {
   position: absolute;
   width: 100%;
@@ -260,10 +259,6 @@ ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.login-page h1 {
-  font-size: 40px;
-  font-weight: 600;
 }
 .login-page img {
   position: absolute;
@@ -277,13 +272,45 @@ ul li a {
   overflow: hidden;
 }
 .login-form {
-  margin-top: 30px;
-  height: 600px;
+  background: linear-gradient(135deg, #FF6B6B 0%, #4C51BF 100%) !important; /* Coral to indigo gradient */
+  max-width: 90%;
   width: 400px;
-  background: #78c778; /* Soft off-white */
-  color: #800080; /* Purple text */
-  padding: 70px 100px;
-  position: absolute;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important;
+  position: relative;
+  text-align: center;
+  animation: pulseSlide 0.8s ease-out;
+}
+.login-form:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+@keyframes pulseSlide {
+  0% { opacity: 0; transform: translateY(20px) scale(0.95); }
+  50% { opacity: 0.7; transform: translateY(0) scale(1.02); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes pulseGlow {
+  0% { transform: scale(1); box-shadow: 0 0 0 rgba(30, 58, 138, 0); }
+  50% { transform: scale(1.05); box-shadow: 0 0 10px rgba(30, 58, 138, 0.5); }
+  100% { transform: scale(1); box-shadow: 0 0 0 rgba(30, 58, 138, 0); }
+}
+@keyframes underlineGrow {
+  0% { background-size: 0 2px; }
+  100% { background-size: 100% 2px; }
+}
+@keyframes bounceFade {
+  0% { opacity: 0; transform: translateY(10px); }
+  60% { opacity: 0.8; transform: translateY(-5px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.avatar {
+  transition: transform 0.3s ease;
+}
+.avatar:hover {
+  transform: scale(1.1);
 }
 .avatar img {
   height: 100px;
@@ -296,83 +323,89 @@ ul li a {
   overflow: auto;
 }
 .login-form h1 {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-size: 40px;
+  margin-bottom: 20px;
+  color: #ffffff !important; /* White for contrast */
   font-weight: 700;
-  color: #800080; /* Purple text */
-  opacity: 1;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
 }
 .login-form p {
-  margin-top: 30px;
-  padding: 0;
-  font-size: 20px;
-  font-weight: bold;
-  color: #800080; /* Purple text */
-  opacity: 1;
-}
-.login-form input {
-  width: 100%;
-  margin-bottom: 20px;
-  color: #800080; /* Purple text */
-  opacity: 1;
+  margin: 8px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff !important;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .login-form input[type="text"],
 .login-form input[type="password"] {
-  border: none;
-  border-bottom: 1px solid #78c778;
-  background: transparent;
-  outline: none;
-  height: 40px;
-  color: #800080; /* Purple text */
-  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #1E3A8A !important; /* Navy blue */
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.9) !important; /* Light gray */
+  color: #2D3748 !important; /* Deep gray */
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  transition: all 0.3s ease;
 }
-.answer {
-  border: none;
-  border-bottom: 1px solid #78c778;
-  background: transparent;
+.login-form input:focus {
   outline: none;
-  height: 40px;
-  color: #800080; /* Purple text */
-  font-size: 20px;
-}
-.answer:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-  border-bottom: 1px solid #1E3A8A; /* Deep navy blue */
+  border-color: #00316b !important; /* Darker navy */
+  animation: pulseGlow 0.6s ease-in-out;
 }
 .login-form input[type="text"]:hover,
 .login-form input[type="password"]:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-  border-bottom: 1px solid #1E3A8A; /* Deep navy blue */
+  animation: pulseGlow 0.6s ease-in-out;
 }
 .login-form input[type="submit"] {
-  border: 1px solid #1E3A8A; /* Deep navy blue */
-  outline: none;
-  height: 40px;
-  background: #1E3A8A; /* Deep navy blue */
-  color: #800080; /* Purple text */
-  font-size: 18px;
-}
-.login-form input[type="submit"]:hover {
+  width: 100%;
+  padding: 10px;
+  background: #1E3A8A !important; /* Navy blue */
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
   cursor: pointer;
-  transform: scale(1.2);
-  transition: 0.5s;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.login-form input[type="submit"]:hover,
+.login-form .btn-primary:hover {
+  animation: pulseGlow 0.6s ease-in-out;
 }
 .login-form a {
+  display: block;
   text-align: center;
   text-decoration: none;
-  font-size: 15px;
-  line-height: 20px;
-  color: #800080; /* Purple text */
-  opacity: 1;
+  color: #ffffff !important; /* White */
+  font-size: 13px;
+  margin-top: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: linear-gradient(to right, #1E3A8A 50%, #1E3A8A 50%) bottom;
+  background-size: 0 2px;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
 }
 .login-form a:hover {
-  color: #4B0082; /* Darker purple for hover */
-  transform: scale(1.2);
-  transition: 0.5s;
+  color: #e0e0e0 !important; /* Light gray */
+  background-size: 100% 2px;
+  animation: underlineGrow 0.3s ease;
+}
+.login-form .alert {
+  background: rgba(255, 107, 107, 0.9) !important; /* Coral */
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 8px;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  animation: bounceFade 0.6s ease-out;
+}
+.login-form .alert .close {
+  color: #ffffff !important;
 }
 
 /* STUDENT SIGN UP ****************************************************/
