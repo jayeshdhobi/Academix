@@ -1,22 +1,45 @@
 <!--
-Template for adding marks. This template can only be accessed by teachers and it contains form where teachers can add marks for specific student.
+Template for adding marks. This template can only be accessed by teachers and it contains form where teachers can add marks for specific student or all students.
 -->
 
 {% extends 'classroom/base.html' %}
 {% load bootstrap4 %}
 {% block content %}
 <div class="container">
-<div class="jumbotron">
-  {% if marks_given %}
-  <h1>Marks added successfully.</h1>
-  {% else %}
-  <h1>Give Marks to {{ student.name }}</h1>
-  <form method="post">
-    {% csrf_token %}
-    {% bootstrap_form form %}
-    <input type="submit" class="btn btn-danger" name="" value="Add Marks">
-  </form>
-  {% endif %}
-</div>
+  <div class="jumbotron">
+    {% if marks_given %}
+      <h1>Marks added successfully.</h1>
+    {% else %}
+      <h1>Add Marks</h1>
+      
+      <!-- Single Student Marks Form -->
+      <h3>Give Marks to Individual Student</h3>
+      <form method="post" class="mb-5">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="student_select">Select Student</label>
+          <select name="student_id" id="student_select" class="form-control">
+            {% for student in students %}
+              <option value="{{ student.id }}" {% if student.id == selected_student_id %}selected{% endif %}>{{ student.name }}</option>
+            {% endfor %}
+            <option value="all">All Students</option>
+          </select>
+        </div>
+        {% bootstrap_form form %}
+        <input type="submit" class="btn btn-danger" name="single_submit" value="Add Marks for Selected Student">
+      </form>
+
+      <!-- Bulk Marks Form -->
+      <h3>Add Marks for All Students</h3>
+      <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="bulk_marks">Marks for All Students</label>
+          <input type="number" name="bulk_marks" id="bulk_marks" class="form-control" placeholder="Enter marks for all students" min="0" max="100" required>
+        </div>
+        <input type="submit" class="btn btn-primary" name="bulk_submit" value="Add Marks for All Students">
+      </form>
+    {% endif %}
+  </div>
 </div>
 {% endblock %}
