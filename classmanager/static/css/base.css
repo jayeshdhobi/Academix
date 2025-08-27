@@ -18,11 +18,7 @@ html {
   scrollbar-width: thin;
 }
 
-.login-page body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
+/* Navigation */
 nav {
   width: 100%;
   background: #1E3A8A; /* Deep navy blue */
@@ -76,7 +72,7 @@ ul li a {
   display: block;
 }
 
-/* INDEX HOME PAGE ############################################# */
+/* INDEX HOME PAGE */
 .banner {
   margin: 0;
   position: relative;
@@ -250,6 +246,7 @@ ul li a {
   transition: 0.5s;
   color: #7C3AED; /* Vibrant purple */
 }
+
 /* LOGIN PAGE */
 .login-page {
   position: absolute;
@@ -408,7 +405,7 @@ ul li a {
   color: #ffffff !important;
 }
 
-/* STUDENT SIGN UP ****************************************************/
+/* STUDENT SIGN UP */
 .student-signup-form {
   margin-top: 2px;
   background: #78c778; /* Soft off-white */
@@ -468,7 +465,7 @@ ul li a {
   transition: 0.5s;
 }
 
-/* SIGN UP PAGE ************************************************/
+/* SIGN UP PAGE */
 .login-page .signup {
   background: #78c778; /* Soft off-white */
   height: 500px;
@@ -514,6 +511,8 @@ ul li a {
   color: #4B0082; /* Darker purple for hover */
   transition: 0.5s;
 }
+
+/* NOTICE AND PROFILE */
 .notice {
   margin-top: 50px;
 }
@@ -526,4 +525,27 @@ ul li a {
   width: 75px;
   height: 75px;
   border-radius: 50%;
+}
+
+/* Responsive adjustments for login form */
+@media only screen and (max-width: 600px) {
+  .login-form {
+    width: 100%;
+    padding: 20px;
+  }
+  .login-form h1 {
+    font-size: 24px;
+  }
+  .login-form p {
+    font-size: 14px;
+  }
+  .login-form input[type="text"],
+  .login-form input[type="password"],
+  .login-form input[type="submit"] {
+    font-size: 12px;
+    padding: 8px;
+  }
+  .login-form a {
+    font-size: 12px;
+  }
 }
