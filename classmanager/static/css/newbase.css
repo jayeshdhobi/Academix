@@ -9,19 +9,20 @@
   align-items: center;
 }
 
-.profile img{
+.profile img {
   position: absolute;
   margin: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-attachment:
+  background-attachment: fixed; /* or scroll */
 }
+
 
 .profile-box{
   width: 600px;
   margin-top: 20px;
-  background: #90EE90!important;
+  background: #C7B39A;
   position: absolute;
   padding: 15px;
   border-radius: 10%;
@@ -167,7 +168,7 @@
   margin-left: 0;
   text-decoration: none;
   color: white;
-  background: #90EE90!important;
+  background: #00A8AA;
   text-align: center;
 
 }

@@ -49,7 +49,7 @@ ul li:hover {
   margin-bottom: 0;
 }
 ul li a {
-  color: #78c778;
+  color: #F0F600;
   text-decoration: none;
   display: block;
 }
@@ -256,15 +256,34 @@ ul li a {
   position: absolute;
   width: 100%;
   height: 120vh;
-  background: #2563EB; /* Vibrant blue */
+  background: linear-gradient(45deg, #2563EB, #7C3AED, #E91E63, #78c778);
+  background-size: 400% 400%;
+  animation: gradientAnimation 12s ease infinite;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 .login-page h1 {
   font-size: 40px;
   font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 1.5s ease-in-out;
 }
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
 .login-page img {
   position: absolute;
   top: 0;
@@ -272,19 +291,35 @@ ul li a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.25;
+  opacity: 0.2;
   background-attachment: fixed;
   overflow: hidden;
+  animation: scaleIn 2s ease-in-out;
 }
+
+@keyframes scaleIn {
+  0% { transform: scale(1.2); opacity: 0; }
+  100% { transform: scale(1); opacity: 0.2; }
+}
+
 .login-form {
   margin-top: 30px;
   height: 600px;
   width: 400px;
-  background: #78c778; /* Soft off-white */
-  color: #800080; /* Purple text */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  color: #ffffff;
   padding: 70px 100px;
-  position: absolute;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease-in-out;
 }
+
+.login-form:hover {
+  transform: translateY(-10px);
+}
+
 .avatar img {
   height: 100px;
   width: 100px;
@@ -293,92 +328,115 @@ ul li a {
   top: -50px;
   left: 37%;
   opacity: 1;
-  overflow: auto;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  animation: bounceIn 1s ease-in-out;
 }
+
+@keyframes bounceIn {
+  0% { transform: scale(0); }
+  70% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
 .login-form h1 {
   margin: 0;
   padding: 0;
   text-align: center;
   font-size: 40px;
   font-weight: 700;
-  color: #800080; /* Purple text */
+  color: #ffffff;
   opacity: 1;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
+
 .login-form p {
   margin-top: 30px;
   padding: 0;
   font-size: 20px;
   font-weight: bold;
-  color: #800080; /* Purple text */
+  color: #ffffff;
   opacity: 1;
 }
+
 .login-form input {
   width: 100%;
   margin-bottom: 20px;
-  color: #800080; /* Purple text */
+  color: #ffffff;
   opacity: 1;
 }
+
 .login-form input[type="text"],
 .login-form input[type="password"] {
   border: none;
-  border-bottom: 1px solid #78c778;
+  border-bottom: 2px solid #ffffff;
   background: transparent;
   outline: none;
   height: 40px;
-  color: #800080; /* Purple text */
+  color: #ffffff;
   font-size: 20px;
+  transition: all 0.3s ease;
 }
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+  border-bottom: 2px solid #E91E63;
+  transform: scale(1.05);
+}
+
 .answer {
   border: none;
-  border-bottom: 1px solid #78c778;
+  border-bottom: 2px solid #ffffff;
   background: transparent;
   outline: none;
   height: 40px;
-  color: #800080; /* Purple text */
+  color: #ffffff;
   font-size: 20px;
+  transition: all 0.3s ease;
 }
+
 .answer:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-  border-bottom: 1px solid #1E3A8A; /* Deep navy blue */
+  transform: scale(1.05);
+  border-bottom: 2px solid #E91E63;
 }
-.login-form input[type="text"]:hover,
-.login-form input[type="password"]:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-  border-bottom: 1px solid #1E3A8A; /* Deep navy blue */
-}
+
 .login-form input[type="submit"] {
-  border: 1px solid #1E3A8A; /* Deep navy blue */
+  border: none;
   outline: none;
   height: 40px;
-  background: #1E3A8A; /* Deep navy blue */
-  color: #800080; /* Purple text */
+  background: linear-gradient(45deg, #E91E63, #7C3AED);
+  color: #ffffff;
   font-size: 18px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
 }
+
 .login-form input[type="submit"]:hover {
   cursor: pointer;
-  transform: scale(1.2);
-  transition: 0.5s;
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #7C3AED, #E91E63);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
+
 .login-form a {
   text-align: center;
   text-decoration: none;
   font-size: 15px;
   line-height: 20px;
-  color: #800080; /* Purple text */
+  color: #ffffff;
   opacity: 1;
+  transition: all 0.3s ease;
 }
+
 .login-form a:hover {
-  color: #4B0082; /* Darker purple for hover */
-  transform: scale(1.2);
-  transition: 0.5s;
+  color: #E91E63;
+  transform: scale(1.1);
 }
 
 /* STUDENT SIGN UP ****************************************************/
 .student-signup-form {
   margin-top: 2px;
-  background: #78c778; /* Soft off-white */
+  background: #00A8AA; /* Soft off-white */
   padding: 20px;
   padding-top: 3%;
   position: absolute;
@@ -437,7 +495,7 @@ ul li a {
 
 /* SIGN UP PAGE ************************************************/
 .login-page .signup {
-  background: #78c778; /* Soft off-white */
+  background: #800080; /* Soft off-white */
   height: 500px;
   width: 500px;
   margin-top: 10%;
@@ -453,13 +511,13 @@ ul li a {
   margin-top: 15%;
   font-size: 50px;
   font-weight: 600;
-  color: #800080; /* Purple text */
+  color: #C7B39A; /* Purple text */
 }
 .login-page .signup p {
   display: block;
   height: 50px;
-  color: #800080; /* Purple text */
-  background: #1E3A8A; /* Deep navy blue */
+  color: #C7B39A; /* Purple text */
+  background: #4C1A57; /* Deep navy blue */
   margin: 20px;
   padding: 5px;
   box-shadow: 0 30px 30px rgba(0,0,0,.5);
