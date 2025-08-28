@@ -7,7 +7,6 @@
   <h1>Assignment is uploaded successfully.</h1>
   {% else %}
   <h1>Upload Assignment</h1>
-  
   <form enctype="multipart/form-data" method="post">
     {% csrf_token %}
     {% bootstrap_form form %}
@@ -16,4 +15,4 @@
   {% endif %}
 </div>
 </div>
-{% endblock %}  
+{% endblock %}
