@@ -27,7 +27,7 @@ Class Manager contains features like:
 ![classmanager-homepage](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/our%20service.png)
 ![classmanager-homepage1](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/last.png)
 
-## Sign up page
+### Sign Up Page
 ![classmanager](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/sign%20up.png)
 
 ### Login Page
@@ -39,12 +39,26 @@ Class Manager contains features like:
 ### Options Available for Students
 ![classmanager-studentsoptionlist](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/s1.png)
 
-### functionalities of  Teacher dashboard
-![classmanager](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/final.png)
+### Functionalities of Teacher Dashboard
+![classmanager-teacher-dashboard](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/final.png)
 
-### Upload assignment Page
-User can edit their profile by clicking on Edit profile.  
-![classmanager-Upload assignment](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/UA.png))
+### Upload Assignment Page
+![classmanager-upload-assignment](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/UA.png)
+
+### Assignment List Page
+![classmanager-assignment-list](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/AL.png)
+
+### Profile Settings Page
+![classmanager-profile-settings](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/PS.png)
+
+### Marks Management
+![classmanager-marks](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/mks.png)
+
+### Student Feedback
+![classmanager-student-feedback](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/SF.png)
+
+### Student View
+![classmanager-student-view](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/SV.png)
 
 ### Marks Given by Teacher
 Teachers can see all the marks given to a particular student of their class and update them.  
