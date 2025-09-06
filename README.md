@@ -24,6 +24,7 @@ Class Manager contains features like:
 ### Home Page
 ![classmanager-homepage](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/first.png)
 ![classmanager-homepage](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/about%20us.png)
+![classmanager-homepage](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/our%20service.png)
 ![classmanager-homepage1](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/last.png)
 
 ## Sign up page
