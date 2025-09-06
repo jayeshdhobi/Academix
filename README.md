@@ -42,9 +42,9 @@ Class Manager contains features like:
 ### functionalities of  Teacher dashboard
 ![classmanager](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/final.png)
 
-### Profile Page
+### Upload assignment Page
 User can edit their profile by clicking on Edit profile.  
-![classmanager-profilepic](https://user-images.githubusercontent.com/59278577/85335035-f34d3080-b4f9-11ea-9478-bc4632798eef.PNG)
+![classmanager-Upload assignment](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/UA.png))
 
 ### Marks Given by Teacher
 Teachers can see all the marks given to a particular student of their class and update them.  
