@@ -22,9 +22,12 @@ Class Manager contains features like:
 ## Screenshots
 
 ### Home Page
-![classmanager](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/sign%20up.png)
-![classmanager-homepage](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/final.png)
+![classmanager-homepage](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/first.png)
+
 ![classmanager-homepage1](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/last.png)
+
+## Sign up page
+![classmanager](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/sign%20up.png)
 
 ### Login Page
 ![classmanager-loginpage](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/login.png)
@@ -37,6 +40,9 @@ Class Manager contains features like:
 
 ### About Us Page
 ![classmanager-aboutus](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/about%20us.png)
+
+### functionalities of  Teacher dashboard
+![classmanager](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/final.png)
 
 ### Profile Page
 User can edit their profile by clicking on Edit profile.  
