@@ -21,21 +21,21 @@ Class Manager contains more features like:
 
 ### Home Page
 
-![classmanager](https://user-images.githubusercontent.com/59278577/85334196-73729680-b4f8-11ea-90b6-a42336e1d7dd.PNG)
-![classmanager-homepage](https://user-images.githubusercontent.com/59278577/85334362-c2203080-b4f8-11ea-973c-e9ff6b481810.PNG)
-![classmanager-homepage1](https://user-images.githubusercontent.com/59278577/85334481-f398fc00-b4f8-11ea-88fc-ba3371076930.PNG)
+![classmanager]()
+![classmanager-homepage]()
+![classmanager-homepage1]()
 
 ### Login Page
 
-![classmanager-loginpage](https://user-images.githubusercontent.com/59278577/85334573-1deab980-b4f9-11ea-86b9-4e1367e78057.PNG)
+![classmanager-loginpage]()
 
 ### Options Avalaible for teachers
 
-![classmanager-teacheroptions](https://user-images.githubusercontent.com/59278577/85334843-8cc81280-b4f9-11ea-8162-2ac5756f3884.PNG)
+![classmanager-teacheroptions]()
 
 ### Options available for students
 
-![classmanager-studentsoptionlist](https://user-images.githubusercontent.com/59278577/85336072-ac603a80-b4fb-11ea-87b5-a942ce294a2b.PNG)
+![classmanager-studentsoptionlist]()
 
 ### Profile Page
 User can edit their profile by clicking on Edit profile
