@@ -48,34 +48,19 @@ Class Manager contains features like:
 ### Assignment List Page
 ![classmanager-assignment-list](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/AL.png)
 
-### Profile Settings Page
+### Profile Page
 ![classmanager-profile-settings](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/PS.png)
 
 ### Marks Management
 ![classmanager-marks](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/mks.png)
 
-### Student Feedback
+### Student activities
 ![classmanager-student-feedback](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/SF.png)
 
 ### Student View
 ![classmanager-student-view](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/SV.png)
 
-### Marks Given by Teacher
-Teachers can see all the marks given to a particular student of their class and update them.  
-![classroom-marksgiven](https://user-images.githubusercontent.com/59278577/85335383-8d14dd80-b4fa-11ea-8257-797c5a0fe52a.PNG)
 
-### Marks List Obtained by Student
-![classmanager-marksobtained](https://user-images.githubusercontent.com/59278577/85335564-d6fdc380-b4fa-11ea-8219-09d40f96f8e7.PNG)
-
-### Assignments Uploaded by Teacher
-Students can download assignments given by their teacher and submit their work too.  
-![classmanager-assignmentpage](https://user-images.githubusercontent.com/59278577/85335929-6c995300-b4fb-11ea-883d-48ab096dd89a.PNG)
-
-### Assignment Submission by Students
-Teachers can check submissions made by students and give marks for them.  
-![classmanager-submissionlist](https://user-images.githubusercontent.com/59278577/85335777-2e039880-b4fb-11ea-8d7d-0edc517ac11e.PNG)
-
----
 
 Class Manager uses the multi-user concept of Django where student and teacher are different types of users with different functionalities.  
 Features like notice, messaging, assignments, and class management require many Django concepts.  
