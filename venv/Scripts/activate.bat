@@ -8,7 +8,11 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
+<<<<<<< HEAD
 set VIRTUAL_ENV=C:\Users\dhobi\.vscode\classmanager-student-teacher-portal-master\venv
+=======
+set VIRTUAL_ENV=C:\Users\dhobi\Downloads\classmanager-student-teacher-portal-master\venv
+>>>>>>> 0821435e0657d1878044df17f888e06ea7f97822
 
 if not defined PROMPT set PROMPT=$P$G
 
