@@ -1,9 +1,9 @@
-# ClassManager
+# Academix
 A Student-Teacher Portal built using HTML, CSS, Python and Django
 
-Class Manager is a Student-Teacher Portal where teachers and students can sign up, and teachers can add students in their class.
+Academix is a Student-Teacher Portal where teachers and students can sign up, and teachers can add students in their class.
 
-Class Manager contains features like:
+Academix contains features like:
 1. Teachers can add or edit their student's marks after adding them in the class.
 2. Teachers can write notices which will be sent to all students in their class.
 3. Teachers can upload assignments which students can download.
@@ -22,46 +22,45 @@ Class Manager contains features like:
 ## Screenshots
 
 ### Home Page
-![classmanager-homepage](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/first.png)
-![classmanager-homepage](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/about%20us.png)
-![classmanager-homepage](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/our%20service.png)
-![classmanager-homepage1](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/last.png)
+![Academix-homepage](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/first.png)
+![Academix-homepage](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/about%20us.png)
+![Academix-homepage](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/our%20service.png)
+![Academix-homepage1](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/last.png)
 
 ### Sign Up Page
-![classmanager](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/sign%20up.png)
+![Academix](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/sign%20up.png)
 
 ### Login Page
-![classmanager-loginpage](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/login.png)
+![Academix-loginpage](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/login.png)
 
 ### Options Available for Teachers
-![classmanager-teacheroptions](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/t1.png)
+![Academix-teacheroptions](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/t1.png)
 
 ### Options Available for Students
-![classmanager-studentsoptionlist](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/s1.png)
+![Academix-studentsoptionlist](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/s1.png)
 
 ### Functionalities of Teacher Dashboard
-![classmanager-teacher-dashboard](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/final.png)
+![Academix-teacher-dashboard](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/final.png)
 
 ### Upload Assignment Page
-![classmanager-upload-assignment](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/UA.png)
+![Academix-upload-assignment](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/UA.png)
 
 ### Assignment List Page
-![classmanager-assignment-list](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/AL.png)
+![Academix-assignment-list](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/AL.png)
 
 ### Profile Page
-![classmanager-profile-settings](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/PS.png)
+![Academix-profile-settings](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/PS.png)
 
 ### Marks Management
-![classmanager-marks](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/mks.png)
+![Academix-marks](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/mks.png)
 
 ### Student activities
-![classmanager-student-feedback](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/SF.png)
+![Academix-student-feedback](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/SF.png)
 
 ### Student View
-![classmanager-student-view](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/SV.png)
+![Academix-student-view](https://github.com/jayeshdhobi/Academix/blob/main/classmanager/static/images/photos/SV.png)
 
 
-
-Class Manager uses the multi-user concept of Django where student and teacher are different types of users with different functionalities.  
+Academix uses the multi-user concept of Django where student and teacher are different types of users with different functionalities.  
 Features like notice, messaging, assignments, and class management require many Django concepts.  
 Projects like Class Manager are a great choice to practice your Django skills and test yourself.
